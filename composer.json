@@ -1,0 +1,11 @@
+{
+    "name": "godsu/mvc",
+    "description": "learning",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Godsu\\Mvc\\": "app/"
+        }
+    },
+    "require": {}
+}
