@@ -6,5 +6,20 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Polyfill\\Php83\\' => array($vendorDir . '/symfony/polyfill-php83'),
+    'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
+    'Symfony\\Contracts\\Service\\' => array($vendorDir . '/symfony/service-contracts'),
+    'Symfony\\Contracts\\Cache\\' => array($vendorDir . '/symfony/cache-contracts'),
+    'Symfony\\Component\\VarExporter\\' => array($vendorDir . '/symfony/var-exporter'),
+    'Symfony\\Component\\HttpFoundation\\' => array($vendorDir . '/symfony/http-foundation'),
+    'Symfony\\Component\\Cache\\' => array($vendorDir . '/symfony/cache'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
+    'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
+    'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
+    'GrahamCampbell\\ResultType\\' => array($vendorDir . '/graham-campbell/result-type/src'),
     'Godsu\\Mvc\\' => array($baseDir . '/app'),
+    'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
 );

@@ -7,5 +7,9 @@
             "Godsu\\Mvc\\": "app/"
         }
     },
-    "require": {}
+    "require": {
+        "symfony/cache": "^7.2",
+        "symfony/http-foundation": "^7.2",
+        "vlucas/phpdotenv": "^5.6"
+    }
 }

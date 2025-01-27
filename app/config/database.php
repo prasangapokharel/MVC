@@ -3,8 +3,9 @@
 // config/database.php
 
 return [
+    
     'host' => 'localhost',
-    'dbname' => 'my_database',
+    'dbname' => 'mvc',
     'username' => 'root',
     'password' => '',
 ];

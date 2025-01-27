@@ -1,4 +1,15 @@
 <?php require __DIR__ . '/components/header.php'; ?>
+<?php if (isset($successMessage)): ?>
+    <div class="bg-green-100 text-green-800 p-4 rounded mb-4">
+        <?= htmlspecialchars($successMessage, ENT_QUOTES, 'UTF-8') ?>
+    </div>
+<?php endif; ?>
+
+<?php if (isset($errorMessage)): ?>
+    <div class="bg-red-100 text-red-800 p-4 rounded mb-4">
+        <?= htmlspecialchars($errorMessage, ENT_QUOTES, 'UTF-8') ?>
+    </div>
+<?php endif; ?>
 
 <div class="container mx-auto p-4">
     <h1 class="text-3xl font-bold text-blue-600">Contact Us</h1>

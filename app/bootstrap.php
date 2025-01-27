@@ -5,6 +5,5 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 // Load configuration (if needed)
-$config = require __DIR__ . '/../app/config/database.php';
-
+$config = require __DIR__ . '/../app/Config/database.php'; // Capital "C" in Config
 // Add other setup code here
