@@ -1,11 +1,12 @@
 <?php
 // public/index.php
 
-// Bootstrap the application
 require __DIR__ . '/../app/bootstrap.php';
 
-// Get the requested URL (e.g., /about)
-$url = $_GET['url'] ?? 'home';
+// Parse the URL from the request URI
+$requestUri = $_SERVER['REQUEST_URI'];
+$url = trim(parse_url($requestUri, PHP_URL_PATH), '/');
+$url = $url ?: 'home'; // Default to home if empty
 
 // Route the request
 switch ($url) {
@@ -20,6 +21,4 @@ switch ($url) {
         break;
 }
 
-// Call the controller's index method
 $controller->index();
-
