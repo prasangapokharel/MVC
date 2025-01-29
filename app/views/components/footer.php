@@ -1,9 +1,6 @@
-<!-- app/views/components/footer.php -->
-   <!-- Footer -->
-   <footer class="gradient-bg py-12">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-xl">&copy; 2025 Future Tech. All rights reserved.</p>
-        </div>
+<footer class="p-4 bg-gray-800 text-white text-center">
+        <p>&copy; 2025 Phonesium</p>
     </footer>
+    <script src="/js/tailwind.js"></script>
 </body>
 </html>

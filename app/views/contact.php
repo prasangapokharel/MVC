@@ -1,5 +1,7 @@
 <?php require __DIR__ . '/components/header.php'; ?>
 <?php if (isset($successMessage)): ?>
+
+    
     <div class="bg-green-100 text-green-800 p-4 rounded mb-4">
         <?= htmlspecialchars($successMessage, ENT_QUOTES, 'UTF-8') ?>
     </div>

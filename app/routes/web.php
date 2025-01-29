@@ -1,9 +1,13 @@
 <?php
 
+use Godsu\Mvc\Controllers\RamController;
+
 use Godsu\Mvc\Controllers\HomeController;
 use Godsu\Mvc\Controllers\AboutController;
 use Godsu\Mvc\Controllers\ContactController;
 use Godsu\Mvc\Controllers\ServiceController;
+use Godsu\Mvc\Controllers\DeveloperController;
+use Godsu\Mvc\Controllers\UsersController;
 
 return [
     '/' => [HomeController::class, 'index'],
@@ -11,5 +15,10 @@ return [
     'about' => [AboutController::class, 'index'],
     'contact' => [ContactController::class, 'index'],
     'service' => [ServiceController::class, 'index'],
+    'developer' => [DeveloperController::class, 'index'],
+    'users' => [UsersController::class, 'index'],
+    'ram' => [RamController::class, 'index'],
+
 
 ];
+

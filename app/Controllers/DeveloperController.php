@@ -3,11 +3,10 @@
 
 namespace Godsu\Mvc\Controllers;
 
-class AboutController
+class DeveloperController
 {
     public function index()
     {
-        require __DIR__ . '/../views/about.php';
+        require __DIR__ . '/../views/developer.php';
     }
 }
-
