@@ -212,7 +212,7 @@
         <div class="h-14 border-b border-gray-800 flex items-center justify-between px-4">
             <div class="flex items-center space-x-2">
                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span class="text-sm text-gray-300">Mosquito AI is ready to assist</span>
+                <span class="text-sm text-gray-300">Mosquito is ready to assist</span>
             </div>
             <div class="flex items-center space-x-4">
                 <button class="text-gray-300 hover:text-white transition-colors">
@@ -291,7 +291,7 @@
             xhtml: false
         });
 
-        addMessage("Hello! Welcome to Mosquito AI. How can I assist you today?", false);
+        addMessage("Hello! Welcome to Mosquito AI . How can I assist you today?\n @Powered by <a href='http://www.prasangapokharel.com.np' target='_blank'>prasanga</a>", false);
 
         function formatMarkdown(content) {
             try {
@@ -352,7 +352,7 @@
                         <div class="message-bubble inline-block rounded-lg p-4 text-white bg-gray-800 markdown-content">
                             <div class="flex items-center space-x-2 text-white">
                                 <img src="/images/logo.svg" alt="Mosquito AI" class="w-4 h-4">
-                                <span class="streaming-content typing">Mosquito AI is thinking...</span>
+                                <span class="streaming-content typing">Mosquito is flying...</span>
                             </div>
                         </div>
                     </div>
