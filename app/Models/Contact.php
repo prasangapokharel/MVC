@@ -26,6 +26,7 @@ class Contact
     }
 
     
+    
     public function saveContact($name, $email, $subject, $message)
     {
         $stmt = $this->db->prepare('INSERT INTO contacts (name, email, subject, message) VALUES (:name, :email, :subject, :message)');

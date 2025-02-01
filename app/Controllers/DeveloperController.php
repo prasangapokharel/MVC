@@ -8,5 +8,6 @@ class DeveloperController
     public function index()
     {
         require __DIR__ . '/../views/developer.php';
+        
     }
 }

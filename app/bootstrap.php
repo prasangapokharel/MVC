@@ -1,9 +1,12 @@
 <?php
-// app/bootstrap.php
 
-// Load Composer's autoloader (handles namespaces)
-require __DIR__ . '/../vendor/autoload.php';
+spl_autoload_register(function ($class) {
+    $baseDir = __DIR__ . '/../';
 
-// Load configuration (if needed)
-$config = require __DIR__ . '/../app/Config/database.php'; // Capital "C" in Config
-// Add other setup code here
+    // Replace namespace separator with directory separator
+    $file = $baseDir . str_replace('\\', '/', $class) . '.php';
+
+    if (file_exists($file)) {
+        require_once $file;
+    }
+});

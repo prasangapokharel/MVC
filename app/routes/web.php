@@ -1,27 +1,14 @@
 <?php
 
-
 use Godsu\Mvc\Controllers\HomeController;
-use Godsu\Mvc\Controllers\AboutController;
-use Godsu\Mvc\Controllers\ContactController;
-use Godsu\Mvc\Controllers\ServiceController;
-use Godsu\Mvc\Controllers\DeveloperController;
-use Godsu\Mvc\Controllers\UserController;
+use Godsu\Mvc\Controllers\BotController;
 
 return [
     '/' => [HomeController::class, 'index'],
-    'users' => [UserController::class, 'index'],
-    'service' => [ServiceController::class, 'index'],
-    'users/create' => [UserController::class, 'create'],
-    'users/store' => [UserController::class, 'store'],
-    'users/{id}' => [UserController::class, 'show'],
-    'users/{id}/edit' => [UserController::class, 'edit'],
-    'users/{id}/update' => [UserController::class, 'update'],
-    'users/{id}/delete' => [UserController::class, 'delete'],
-
-
-
+    'bots' => [BotController::class, 'index'],
+    'bot' => [BotController::class, 'index'],
+    'bot/start' => [BotController::class, 'startBot', 'POST'],
+    'bot/execute' => [BotController::class, 'executeTrading', 'POST'],
+    'bot/status' => [BotController::class, 'getStatus', 'GET'],
+    'bot/stop' => [BotController::class, 'stopBot', 'POST']
 ];
-
-
-
